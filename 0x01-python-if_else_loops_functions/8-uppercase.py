@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 def uppercase(str):
     # convert str to uppercase
     for c in str:
@@ -5,4 +7,3 @@ def uppercase(str):
             c = chr(ord(c) - 32)
         print("{}".format(c), end="")
     print("")
-
