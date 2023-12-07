@@ -7,7 +7,7 @@ def search_replace(my_list, search, replace):
     """
     new_list = []
     for ele in range(len(my_list)):
-        if my_list[elel] == search:
+        if my_list[ele] == search:
             new_list.append(replace)
         else:
             new_list.append(my_list[ele])
