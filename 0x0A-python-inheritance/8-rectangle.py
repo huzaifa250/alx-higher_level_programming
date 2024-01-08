@@ -1,17 +1,15 @@
 #!/usr/bin/python3
-Rectangle = __import__('8-rectangle').Rectangle
+"""Defines a class Rectangle that inherits from BaseGeometry."""
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
-re = Rectangle(3, 5)
 
-print(re)
-print(dir(re))
+class Rectangle(BaseGeometry):
+    """Represent a rectangle using BaseGeometry."""
 
-try:
-    print("Rectangle: {} - {}".format(re.width, re.height))
-except Exception as e:
-    print("[{}] {}".format(e.__class__.__name__, e))
+    def __init__(self, width, height):
+        """Intialize a new Rectangle."""
 
-try:
-    re2 = Rectangle(4, True)
-except Exception as e:
-    print("[{}] {}".format(e.__class__.__name__, e))
+        self.integer_validator("width", width)
+        self.__width = width
+        self.integer_validator("height", height)
+        self.__height = height
