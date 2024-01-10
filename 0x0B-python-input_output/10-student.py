@@ -17,7 +17,7 @@ class Student:
             res = {}
             for k, v in self.__dict__.items():
                 if k in attrs:
-                    ret[k] = v
+                    res[k] = v
             return res
         else:
             return self.__dict__
