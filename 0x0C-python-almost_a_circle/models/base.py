@@ -49,3 +49,10 @@ class Base:
                 text.append(lst.to_dictionary())
         with open(filename, mode="w", encoding="utf-8") as f:
             return f.write(Base.to_json_string(text))
+
+    @staticmethod
+    def from_json_string(json_string):
+        """Return the deserialization of a JSON string."""
+        if json_string is None or json_string == "[]":
+            return []
+        return json.loads(json_string)
