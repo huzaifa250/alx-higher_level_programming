@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+import json
 
 """
 module implements `base` class of all other classes in the project
@@ -28,3 +29,12 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+
+    @staticmethod
+    def to_json_string(list_dictionaries):
+        """Return the JSON serialization of a list of dicts.
+        or in simple way (list to json)
+        """
+        if list_dictionaries is None or list_dictionaries == []:
+            return "[]"
+        return json.dumps(list_dictionaries)
