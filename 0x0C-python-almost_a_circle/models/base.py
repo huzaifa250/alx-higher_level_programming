@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 import json
+from json import dumps, loads
 
 """
 module implements `base` class of all other classes in the project
