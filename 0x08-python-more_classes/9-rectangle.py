@@ -110,6 +110,5 @@ class Rectangle:
 
     def __del__(self):
         """Print message for any  deletion of a Rectangle."""
-        if Rectangle.number_of_instatnces > 0:
-            Rectangle.number_of_instances -= 1
+        type(self).number_of_instances -= 1
         print("Bye rectangle...")
