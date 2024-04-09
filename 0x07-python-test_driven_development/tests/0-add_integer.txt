@@ -1,0 +1,58 @@
+The ``0-add_integer`` module
+===========================
+
+Using ``add_integer``
+---------------------------------
+Usage
+==================
+
+``add_integer(...)``` returns the addition of its two arguments.
+
+>>> add_integer = __import__('0-add_integer').add_integer
+ >>> add_integer(2, 3)
+    5
+>>> add_integer(3.5, 7)
+10
+>>> add_integer(2.0, 5.0)
+7
+>>> add_integer(4)
+102
+>>> add_integer(-3, -7)
+-10
+>>> add_integer(-2.0, -5.0)
+-7
+>>> add_integer(0.5, 1.5)
+2
+>>> add_integer(2.6, 3.9)
+6
+>>> add_integer(4.7, 6.2)
+10
+>>> add_integer(0, 0)
+0
+
+# Test cases with invalid input types
+>>> add_integer("hello", 10)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
+>>> add_integer(5, "world")
+Traceback (most recent call last):
+    ...
+TypeError: b must be an integer
+>>> add_integer("hello", "world")
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
+>>> add_integer(None, 10)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
+>>> add_integer(5, None)
+Traceback (most recent call last):
+    ...
+TypeError: b must be an integer
+>>> add_integer(None, None)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
+
