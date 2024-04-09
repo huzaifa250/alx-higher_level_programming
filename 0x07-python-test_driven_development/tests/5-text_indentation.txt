@@ -1,0 +1,36 @@
+"""
+ 
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+>>> text_indentation("Hello. This is a sample text. How are you?")
+	Hello
+ 	This is a sample text
+ 	How are you
+
+# Valid case with multiline string
+>>> text_indentation("This\nis\na\nmultiline\nstring.")
+	This
+	is
+	a
+	multiline
+	string
+
+>>> text_indentation("Hello?")
+    Hello?
+
+>>> text_indentation("          ")
+
+no spaces are printed at the end of each printed line.
+ >>> text_indentation("Hello.   ")
+    Hello.
+
+>>> text_indentation(123)
+Traceback (most recent call last):
+    ...
+TypeError: text must be a string
+
+# Test with empty string
+>>> text_indentation("")
+Traceback (most recent call last):
+    ...
+"""
+
