@@ -1,0 +1,27 @@
+"""
+Use say_my_name function.
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+# Valid case with both first and last name
+>>> say_my_name("Huzaifa", "Elnaeem")
+My name is Huzaifa Elnaeem
+
+# Valid case with only first name
+>>> say_my_name("Huzaifa")
+My name is Huzaifa
+
+# Test with non-string first name
+>>> say_my_name(133, "Elnaeem")
+Traceback (most recent call last):
+    ...
+TypeError: first_name must be a string
+
+# Test with non-string last name
+>>> say_my_name("Huzaifa", 134)
+Traceback (most recent call last):
+    ...
+TypeError: last_name must be a string
+>>> say_my_name("Hamid", ["fool", "Tee", "Water"])
+    Traceback (most recent call last):
+    TypeError: last_name must be a string
+"""
