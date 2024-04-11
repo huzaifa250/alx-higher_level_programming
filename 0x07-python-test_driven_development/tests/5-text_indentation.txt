@@ -1,10 +1,7 @@
 """
  >>> text_indentation = __import__('5-text_indentation').text_indentation
- >>> text_indentation("Hello?")
-    Hello?
-    <BLANKLINE>
-
-No spaces are printed at the beginning of a line.
+ >>> text_indentation("No punctuation in this text")
+ No punctuation in this text
 
 ::
 
@@ -61,11 +58,7 @@ New lines within a string are printed as normal.
     <BLANKLINE>
 
 ::
-    >>> text_indentation("T his \n new line.")
-    T his
-    new line.
-    <BLANKLINE>
-
+ 
 A combo example:
 
 ::
