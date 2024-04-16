@@ -8,3 +8,9 @@ class BaseGeometry:
     def area(self):
         """Not implemented."""
         raise Exception("area() is not implemented")
+
+
+if __name__ == "__main__":
+    import doctest
+
+    doctest.testmod()
