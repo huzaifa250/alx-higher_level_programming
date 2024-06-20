@@ -1,5 +1,5 @@
 #!/usr/bin/node
-/*parses the third command-line argument as a number, 
+/* parses the third command-line argument as a number,
 converts it to an integer using Math.floor */
 const size = Math.floor(Number(process.argv[2]));
 if (isNaN(size)) {
