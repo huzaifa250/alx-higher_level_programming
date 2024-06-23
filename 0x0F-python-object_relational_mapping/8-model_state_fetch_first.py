@@ -14,8 +14,4 @@ if __name__ == '__main__':
     session = Session()
 
     my_res = session.query(State).order_by(State.id).first()
-    if my_res:
-        print("1" + my_res.name)
-    else:
-        print("Nothing")
-    session.close()
+    print("Nothing" if not my_res else "{}: {}".format(my_res.id, my_res.name))
