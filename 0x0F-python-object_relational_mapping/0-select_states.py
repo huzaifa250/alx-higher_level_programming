@@ -18,7 +18,7 @@ if __name__ == "__main__":
     )
 
     cursor = conn.cursor()
-    cursor.execute("SELECT * FROM states ORDER BY states.id ASC;")
+    cursor.execute("SELECT * FROM states ORDER BY id ASC;")
     my_res = cursor.fetchall()
     for state in my_res:
         print(state)
